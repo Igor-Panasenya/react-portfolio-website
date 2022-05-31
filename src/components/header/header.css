@@ -1,0 +1,163 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.toogles {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* КНОПКА ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА */
+
+.lang-btn {
+    position: relative;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.lang-btn .lang-btn-circle {
+    position: relative;
+    left: 2px;
+    transition: all ease-in-out 0.3s;
+}
+.lang-btn.active .lang-btn-circle {
+    left: 70px;
+}
+.lang-btn .lang-btn-circle {
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+.lang-btn .langEng {
+    position: relative;
+    left: -6px;
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+.lang-btn.active .langEng {
+    position: relative;
+    left: 20px;
+    opacity: 0;
+}
+.lang-btn .langRu {
+    position: relative;
+    left: -25px;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+.lang-btn.active .langRu {
+    left: 14px;
+    opacity: 1;
+}
+
+.lang-btn:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ----- CTA ----- */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ----- HEADER SOCIALS ----- */
+
+.header__socials {
+    display: flex;flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ----- ME ----- */
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem;
+}
+
+/* ----- SCROLL DOWN ----- */
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scroll__down:hover {
+    gap: 1rem;
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 108vh;
+    }
+
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}
+
+/* ----- ANIMATION ----- */
+
+.header__socials > a:nth-child(1) {
+    --animate-duration: 2.2s;
+}
+.header__socials > a:nth-child(2) {
+    --animate-duration: 1.8s;
+}
+.header__socials > a:nth-child(3) {
+    --animate-duration: 1.4s;
+}
+.header__socials > a:nth-child(4) {
+    --animate-duration: 1s;
+}

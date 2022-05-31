@@ -1,0 +1,624 @@
+Header.css
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+header {
+height: 68vh;
+}
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+header {
+height: 108vh;
+}
+
+.header__socials, .scroll__down {
+display: none;
+}
+}
+
+_______________________________________________________________
+Nav.jsx
+
+import './nav.css';
+import {AiOutlineHome} from 'react-icons/ai';
+import {AiOutlineUse} from 'react-icons/ai';
+import {BiBookBookmark} from 'react-icons/bi';
+import {RiServiceLine} from 'react-icons/ri';
+import {SiGooglemessages} from 'react-icons/si';
+import {useState} from 'react';
+
+const [activeNav, setActiveNav] = useState('#');
+
+<nav>
+<a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/><a/>
+<a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/><a/>
+<a href="#experience" onClick={() => setActiveNav('#experience)} className={activeNav === '#experience' ? 'active' : ''}><BiBookBookmark/><a/>
+<a href="#services" onClick={() => setActiveNav('#services)} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/><a/>
+<a href="#contact" onClick={() => setActiveNav('#contact)} className={activeNav === '#contact' ? 'active' : ''}><SiGooglemessages/><a/>
+</nav>
+
+
+
+_______________________________________________________________
+About.jsx
+
+import ME from '../../img/me-about.jpg'
+
+<section id='about'>
+<h5>Get To Know</h5>
+<h2>About Me</h2>
+
+<div className="container about__container">
+<div className="about__me">
+<div className="about__me-image">
+<img src={ME} alt="About Image" />
+</div>
+</div>
+
+<div className="about__content">
+<p>
+Text
+</p>
+
+<a href="#contact"  className="btn btn-primary">Let's Talk</a>
+</div>
+</div>
+</section>
+
+_______________________________________________________________
+about.css
+
+.about__container {
+display: grid;
+grid-template-columns: 35% 50%;
+gap: 15%;
+}
+
+.about__me  {
+width: 100%;
+aspect-ratio: 1/1;
+border-radius: 2rem;
+background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+display: grid;
+place-items: center;
+}
+
+.about__me-image {
+border-radius: 2rem;
+overflow: hidden;
+transform: rotate(10deg);
+transition: var(--transition);
+}
+
+.about__me-image:hover {
+transform: rotate(0);
+}
+
+.about__content p {
+margin: 2rem 0 2.6rem;
+color: var(--color-light);
+}
+
+
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+.about__container {
+grid-template-columns: 1fr;
+gap: 0;
+}
+
+.about__me {
+width: 50%;
+margin: 2rem auto 4rem;
+}
+
+.about__content p {
+margin: 1rem 0 1.5rem;
+}
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+.about__me {
+width: 65%;
+margin: 0 auto 3rem;
+}
+
+.about__content {
+text-align: center;
+}
+
+.about__content p {
+margin: 1.5rem 0;
+}
+}
+
+_______________________________________________________________
+Contact.jsx
+
+import {HiOutlineMail} from 'react-icons/hi';
+import {FaTelegramPlane} from 'react-icons/fa';
+import {FaViber} from 'react-icons/fa';
+
+<section id='contact'>
+<h5>Get In Touch</h5>
+<h2>Contact Me</h2>
+
+<div className="container contact__container">
+<div className="contact__options">
+
+<article className="contact__option">
+<HiOutlineMail className="contact__option-icon"/>
+<h4>e-mail</h4>
+<h5>panasenya1995@mail.ru</h5>
+<a href="mailto:panasenya1995@mail.ru" target="_blank">Send a message</a>
+</article>
+
+<article className="contact__option">
+<FaTelegramPlane  className="contact__option-icon"/>
+<h4>Telegram </h4>
+<h5>@sokolov52</h5>
+<a href="https://t.me/sokolov52"  target="_blank">Send a message</a>
+</article>
+
+<article className="contact__option">
+<FaViber  className="contact__option-icon"/>
+<h4>Viber</h4>
+<h5>+ 375 29 268 57 70</h5>
+<a href="viber://chat?number=%2B375292685770"  target="_blank">Send a message</a>
+</article>
+
+</div>
+<form action="">
+<input type="text" name='name' placeholder='Your Full Name' required />
+<input type="email" name='email' placeholder='Your Email' required />
+<textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+<button type='submit' className="btn btn-primary">Send Message</button>
+</form>
+</div>
+</section>
+_______________________________________________________________
+contact.css
+
+.contact__container {
+width: 58%;
+display: grid;
+grid-template-columns: 30% 58%;
+gap: 12%;
+}
+
+.contact__options {
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+}
+
+.contact__option {
+background: var(--color-bg-variant);
+padding: 1.2rem;
+border-radius: 1.2rem;
+text-align: center;
+border: 1px solid transparent;
+transition: var(--transition);
+}
+
+.contact__option:hover {
+background: transparent;
+border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+margin-top: 0.7rem;
+display: inline-block;
+font-size: 0.8rem;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+}
+
+input, textarea {
+width: 100%;
+padding: 1.5rem;
+border-radius: 0.5rem;
+background: transparent;
+border: 2px solid var(--color-primary-variant);
+resize: none;
+color: var(--color-white)
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+.contact__container {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+.contact__container {
+width: var(--container-width: sm)
+}
+}
+
+
+_______________________________________________________________
+Experience.jsx
+
+import {AiFillHtml5} from 'react-icons/si';
+import {FaCss3Alt} from 'react-icons/fa';
+import {SiJavascript} from 'react-icons/si';
+import {SiBootstrap} from 'react-icons/si';
+import {FaReact} from 'react-icons/fa';
+import {FaFigma} from 'react-icons/fa';
+
+
+<section id='experience'>
+<h5>What Skills I Have</h5>
+<h2>My Experience</h2>
+
+<div className="container experience__container">
+<div className="experience__content">
+<h3> Frontend Development</h3>
+<div className="experience__items">
+
+<article className="experience__item">
+<AiFillHtml5 className="experience__item-icon" />
+<h4>HTML</h4>
+</article>
+
+<article className="experience__item">
+<FaCss3Alt className="experience__item-icon" />
+<h4>CSS</h4>
+</article>
+
+<article className="experience__item">
+<SiJavascript className="experience__item-icon" />
+<h4>JavaScript</h4>
+</article>
+
+<article className="experience__item">
+<SiBootstrap className="experience__item-icon" />
+<h4>Bootstrap</h4>
+</article>
+
+<article className="experience__item">
+<FaReact className="experience__item-icon" />
+<h4>React.js</h4>
+</article>
+
+<article className="experience__item">
+<FaFigma className="experience__item-icon" />
+<h4>Figma</h4>
+</article>
+
+</div>
+</div>
+</div>
+
+</section>
+_______________________________________________________________
+experience.css
+
+.experience__content {
+max-width: 70%;
+background: var(--color-variant);
+padding: 2.4rem 5rem;
+border: 1px solid transparent;
+transition: var(--transition)
+}
+
+.experience__items:hover {
+background: transparent;
+border-color: var(--color-primary-variant);
+cursor: default;
+}
+
+.experience__content > h3 {
+text-align: center;
+margin-bottom: 2rem;
+color: var(--color-primary);
+}
+
+.experience__items {
+display: grid;
+grid-template-column: 1fr 1fr;
+row-gap: 2rem'
+}
+
+.experience__item {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.experience__item-icon {
+margin-top: 6px;
+color: var(--color-primary);
+}
+
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+.experience__content {
+max-width: 80%;
+padding: 2rem;
+margin: 0 auto;
+}
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+.experience__content {
+max-width: 90%;
+gap: 1rem;
+}
+}
+
+_______________________________________________________________
+index.css (добавить !!!)
+
+:root {
+--container-width-sm: 90%;
+}
+
+_______________________________________________________________
+Portfolio.jsx
+
+import IMG1 from '../../img/portfolio1.jpg';
+import IMG2 from '../../img/portfolio2.jpg';
+import IMG3 from '../../img/portfolio3.jpg';
+import IMG4 from '../../img/portfolio4.jpg';
+
+const portfolioArray = [
+{
+id: 1,
+image: IMG1,
+title: 'This is a portfolio item title',
+githyb: 'http://github.com',
+demo: 'http://github.com'
+},
+{
+id: 1,
+image: IMG2,
+title: 'This is a portfolio item title',
+githyb: 'http://github.com',
+demo: 'http://github.com'
+},
+{
+id: 1,
+image: IMG3,
+title: 'This is a portfolio item title',
+githyb: 'http://github.com',
+demo: 'http://github.com'
+},
+{
+id: 1,
+image: IMG4,
+title: 'This is a portfolio item title',
+githyb: 'http://github.com',
+demo: 'http://github.com'
+},
+]
+
+
+
+
+<section id='portfolio'>
+<h5>My Resent Work</h5>
+<h2>Portfolio</h2>
+
+<div className="container portfolio__container">
+
+{
+portfolioArray.map(({id, image, title, github, demo}) => {
+return (
+
+<article key={id} className="portfolio__item">
+<div className="portfolio__item-image">
+<img src={image} alt="portfolio" />
+</div>
+<h3>{title}</h3>
+<div className="portfolio__item-cta">
+<a href={github} className="btn" target='_blank'>Github</a>
+<a href={demo} className="btn btn-primary" target='_blank'>Live Demo</a>
+</div>
+</article>
+
+)
+})
+}
+
+</div>
+</section>
+_______________________________________________________________
+
+portfolio.css
+
+.portfolio__container {
+display: grid;
+grid-template-column: repeat(3, 1fr);
+gap: 2.5rem;
+}
+
+.portfolio__item {
+background: var(--color-bg-variant);
+padding: 1.2rem;
+border-radius: 2rem;
+border: 1px solid transparent;
+transition: var(--transition);
+}
+
+.portfolio__item:hover {
+border-color: var(--color-primary-variant);
+background: transparent;
+}
+
+.portfolio__item-image {
+border-radius: 1.5rem;
+overflow: hidden;
+}
+
+.portfolio__item h3 {
+margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+display: flex;
+gap: 1rem;
+margin-bottom: 1rem;
+}
+
+
+
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+.portfolio__container {
+grid-template-column: 1fr 1fr;
+gap: 1.2rem;
+}
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 600px) {
+.portfolio__container {
+grid-template-column: 1fr;
+gap: 1rem;
+}
+}
+_______________________________________________________________
+nav.css
+
+nav {
+background: rgba(0, 0, 0, 0.3);
+width: max-content;
+display: block;
+padding: 0.7rem 1.7rem;
+z-index: 2;
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+bottom: 2rem;
+display: flex;
+gap: 0.8rem;
+border-radius: 3rem;
+backdrop-filter: blur(15px);
+}
+
+nav a {
+background: transparent;
+padding: 0.9rem;
+border-radius: 50%;
+display: flex;
+color: var(--color-light);
+font-size: 1.1rem;
+}
+
+nav a:hover {
+background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+background: var(--color-bg);
+color: var(--color-white);
+}
+
+_______________________________________________________________
+Footer.jsx
+
+import {AiOutlineInstagram} from 'react-icons/ai';
+import {AiOutlineLinkedin} from 'react-icons/ai';
+
+<footer>
+<a href="#" className="footer__logo">EGATOR</a>
+
+<ul className="permalinks">
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div className="footer__socialsa">
+<a href="https://www.instagram.com/vivern_eht/"><AiOutlineInstagram/></a>
+<a href="https://www.linkedin.com/in/%D0%B8%D0%B3%D0%BE%D1%80%D1%8C-%D0%BF%D0%B0%D0%BD%D0%B0%D1%81%D0%B5%D0%BD%D1%8F-96a875229/"><AiOutlineLinkedin/></a>
+</div>
+
+</footer>
+
+_______________________________________________________________
+footer.css
+
+footer {
+background: var(--color-primary);
+padding: 3rem 0;
+text-align: center;
+font-size: 0.9rem;
+margin-top: 7rem;
+}
+
+footer a {
+color: var(--color-bg);
+}
+
+.footer__logo {
+font-size: 2rem;
+font-weight: 500;
+margin-bottom: 2rem;
+display: inline-block;
+}
+
+.permalinks {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+margin: 0 auto 3rem;
+}
+
+.footer__socials {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-bottom: 4rem;
+}
+
+
+.footer__socials a {
+background: var(--color-bg);
+color: var(--color-white);
+padding: 0.8rem;
+border-radius: 0.7rem;
+display: flex;
+border: 1px solid transparent;
+}
+
+.footer__socials a:hover {
+background: transparent;
+color: var(--color-bg);
+border-color: var(--color-bg);
+}
