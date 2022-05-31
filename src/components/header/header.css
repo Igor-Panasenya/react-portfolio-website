@@ -145,6 +145,14 @@ header {
     .header__socials, .scroll__down {
         display: none;
     }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .cta * {
+        font-size: 0.8rem;
+    }
 }
 
 /* ----- ANIMATION ----- */
