@@ -3,8 +3,6 @@ import './portfolio.css';
 import IMG1 from '../../img/portfolio1.jpg';
 import IMG2 from '../../img/portfolio2.jpg';
 import IMG3 from '../../img/portfolio3.jpg';
-import {useContext} from "react";
-import {LangContext} from "../../App";
 
 const portfolioArray = [
     {
@@ -29,12 +27,10 @@ const portfolioArray = [
 
 const Portfolio = () => {
 
-    const {langEng} = useContext(LangContext)
-
     return (
         <section id='portfolio'>
-            {langEng && <h5>My Resent Work</h5>}
-            <h2>{langEng ? 'Portfolio' : 'Портфолио'}</h2>
+            {/*<h5>My Resent Work</h5>*/}
+            <h2>{/*'Portfolio'*/}Портфолио</h2>
 
             <div className="container portfolio__container">
                 {portfolioArray.map(({id, image, title, github, demo}) => {
@@ -45,7 +41,7 @@ const Portfolio = () => {
                                 </div>
                                 <div className="portfolio__item-cta">
                                     <a href={github} className="btn" target='_blank'>Github</a>
-                                    <a href={demo} className="btn btn-primary" target='_blank'>{langEng ? 'Live Demo' : 'Просмотр'}</a>
+                                    <a href={demo} className="btn btn-primary" target='_blank'>{/*'Live Demo'*/}Просмотр</a>
                                 </div>
                             </article>
                         )

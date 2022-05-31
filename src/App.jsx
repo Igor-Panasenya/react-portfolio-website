@@ -7,23 +7,17 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
-export const LangContext = createContext()
-
 const App = () => {
-
-    const [langEng, setLangEng] = useState(false)
 
     return (
         <>
-            <LangContext.Provider value={{langEng, setLangEng}}>
-                <Header />
-                <Nav />
-                <About />
-                <Experience />
-                <Portfolio />
-                <Contact />
-                <Footer />
-            </LangContext.Provider>
+            <Header />
+            <Nav />
+            <About />
+            <Experience />
+            <Portfolio />
+            <Contact />
+            <Footer />
         </>
     );
 };

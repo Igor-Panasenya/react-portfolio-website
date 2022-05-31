@@ -6,22 +6,18 @@ import {SiJavascript} from 'react-icons/si';
 import {FaReact} from 'react-icons/fa';
 import {FaFigma} from 'react-icons/fa';
 import {SiAdobephotoshop} from 'react-icons/si';
-import {useContext} from "react";
-import {LangContext} from "../../App";
 
 const Experience = () => {
-
-    const {langEng} = useContext(LangContext)
 
     return (
         <section id='experience'>
 
-            {langEng && <h5>What Skills I Have</h5>}
-            <h2>{langEng ? "My Experience" : "Мои навыки"}</h2>
+            {/*<h5>What Skills I Have</h5>*/}
+            <h2>{/*"My Experience"*/}Мои навыки</h2>
 
             <div className="container">
                 <div className="experience__content">
-                    <h3> {langEng ? "Frontend Development" : "Для Фронтэнд разработки"}</h3>
+                    <h3> {/*"Frontend Development"*/}Для Фронтэнд разработки</h3>
                     <div className="experience__items">
 
                         <article className="experience__item">
