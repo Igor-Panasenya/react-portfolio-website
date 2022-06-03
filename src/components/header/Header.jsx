@@ -16,7 +16,7 @@ const Header = () => {
             <div className="container header__container">
                 <h5>{langEng ? "Hello I'm" : "Привет! Меня зовут"}</h5>
                 <h1>{langEng ? "PANASENYA IGOR" : "Панасеня Игорь"}</h1>
-                <h5 className="text-light">{langEng ? "React Developer" : "Фронтэнд разработчик"}</h5>
+                <h5 className="text-light">{langEng ? "Frontend Developer" : "Фронтэнд разработчик"}</h5>
                 <CTA />
 
                 <HeaderSocial />
