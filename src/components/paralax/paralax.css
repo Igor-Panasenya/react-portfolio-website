@@ -1,0 +1,80 @@
+.paralax * {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.paralax-1 {
+    top: 800px;
+    left: 330px;
+    width: 10%;
+}
+
+.paralax-2 {
+    right: -180px;
+    top: 1300px;
+    width: 30%;
+}
+
+.paralax-3 {
+    right: 340px;
+    top: 2300px;
+    width: 30%;
+}
+.paralax-4 {
+    left: -150px;
+    top: 3300px;
+    width: 40%;
+}
+.paralax-5 {
+    left: 10px;
+    top: 4800px;
+    width: 10%;
+}
+.paralax-6 {
+    left: 90px;
+    top: 4600px;
+    width: 12%;
+}
+.paralax-7 {
+    left: -100px;
+    top: 4800px;
+    width: 30%;
+}
+.paralax-8 {
+    right: -300px;
+    top: 6300px;
+    width: 50%;
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1000px) {
+    .paralax-1 {
+        left: 5%;
+    }
+    .paralax-2 {
+        right: -50px;
+        width: 50%;
+    }
+
+    .paralax-3 {
+        right: -20px;
+    }
+    .paralax-4 {
+        left: -60px;
+    }
+    .paralax-5 {
+        left: -10px;
+    }
+    .paralax-6 {
+        left: -20px;
+    }
+    .paralax-7 {
+        left: -80px;;
+    }
+    .paralax-8 {
+        right: -100px;
+        top: 6900px;
+    }
+}

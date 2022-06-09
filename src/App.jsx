@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useEffect, useState} from 'react';
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
@@ -6,6 +6,7 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Paralax from "./components/paralax/Paralax";
 
 export const LangContext = createContext()
 
@@ -17,6 +18,7 @@ const App = () => {
         <>
             <LangContext.Provider value={{langEng, setLangEng}}>
                 <Header />
+                <Paralax />
                 <Nav />
                 <About />
                 <Experience />
