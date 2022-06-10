@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react';
 import './header.css';
 import CTA from './CTA';
-import ME from '/img/main-photo.png';
 import HeaderSocial from "./HeaderSocial";
 import {BsArrowRightShort} from "react-icons/bs";
 import 'animate.css';
@@ -22,7 +21,7 @@ const Header = () => {
                 <HeaderSocial />
 
                 <div className="me">
-                    <img src={ME} alt="me"/>
+                    <img src='/img/main-photo.png' alt="me"/>
                 </div>
 
 

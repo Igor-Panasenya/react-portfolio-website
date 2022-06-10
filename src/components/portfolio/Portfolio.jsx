@@ -1,27 +1,24 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from '/img/portfolio1.jpg';
-import IMG2 from '/img/portfolio2.jpg';
-import IMG3 from '/img/portfolio3.jpg';
 import {useContext} from "react";
 import {LangContext} from "../../App";
 
 const portfolioArray = [
     {
         id: 1,
-        image: IMG1,
+        image: '/img/portfolio1.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-agency.git',
         demo: 'https://portfolio-agency.netlify.app/'
     },
     {
         id: 2,
-        image: IMG2,
+        image: '/img/portfolio2.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-revo.git',
         demo: 'https://portfolio-revo.netlify.app/'
     },
     {
         id: 3,
-        image: IMG3,
+        image: '/img/portfolio3.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-creatives.git',
         demo: 'https://portfolio-creatives.netlify.app/'
     },

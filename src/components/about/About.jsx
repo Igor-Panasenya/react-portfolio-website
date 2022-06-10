@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import './about.css';
-import ME from '/img/me-about.jpg';
 import {LangContext} from "../../App";
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={ME} alt="About Image" />
+                        <img src='/img/me-about.jpg' alt="About Image" />
                     </div>
                 </div>
 
