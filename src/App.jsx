@@ -18,7 +18,7 @@ const App = () => {
         <>
             <LangContext.Provider value={{langEng, setLangEng}}>
                 <Header />
-
+                <Paralax />
                 <Nav />
                 <About />
                 <Experience />

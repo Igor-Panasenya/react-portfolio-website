@@ -1,12 +1,59 @@
 import React from 'react';
 import './paralax.css';
 import {useEffect, useState} from "react";
-import IMG1 from '../../img/paralax-item-1.png'
-import IMG2 from '../../img/paralax-item-2.png'
-import IMG3 from '../../img/paralax-item-3.png'
 
 const Paralax = () => {
 
+    const paralaxItems = [
+        {
+            id: 1,
+            IMG: 1,
+            speedTranslate: 0.2,
+            speedRotate: 0.05,
+        },
+        {
+            id: 2,
+            IMG: 2,
+            speedTranslate: 0.4,
+            speedRotate: 0,
+        },
+        {
+            id: 3,
+            IMG: 3,
+            speedTranslate: 0.35,
+            speedRotate: 0,
+        },
+        {
+            id: 4,
+            IMG: 2,
+            speedTranslate: 0.6,
+            speedRotate: 0,
+        },
+        {
+            id: 5,
+            IMG: 1,
+            speedTranslate: 0.7,
+            speedRotate: 0.05,
+        },
+        {
+            id: 6,
+            IMG: 1,
+            speedTranslate: 0.5,
+            speedRotate: 0.6,
+        },
+        {
+            id: 7,
+            IMG: 3,
+            speedTranslate: 0.35,
+            speedRotate: 0,
+        },
+        {
+            id: 8,
+            IMG: 3,
+            speedTranslate: 0.5,
+            speedRotate: 0.05,
+        },
+    ]
     const [offsetY, setOffsetY] = useState(0)
     const handleScroll = () => setOffsetY(window.pageYOffset)
 
@@ -18,54 +65,14 @@ const Paralax = () => {
 
     return (
         <div className='paralax'>
-            <img
-                src={IMG1}
-                style={{transform: `translateY(${-offsetY * 0.2}px) rotate(${-offsetY * 0.05}deg)`}}
-                className='paralax-1'
-                alt="paralax"
-            />
-            <img
-                src={IMG2}
-                style={{transform: `translateY(${-offsetY * 0.4}px)`}}
-                className='paralax-2'
-                alt="paralax"
-            />
-            <img
-                src={IMG3}
-                style={{transform: `translateY(${-offsetY * 0.35}px)`}}
-                className='paralax-3'
-                alt="paralax"
-            />
-            <img
-                src={IMG2}
-                style={{transform: `translateY(${-offsetY * 0.6}px)`}}
-                className='paralax-4'
-                alt="paralax"
-            />
-            <img
-                src={IMG1}
-                style={{transform: `translateY(${-offsetY * 0.7}px) rotate(${-offsetY * 0.05}deg)`}}
-                className='paralax-5'
-                alt="paralax"
-            />
-            <img
-                src={IMG1}
-                style={{transform: `translateY(${-offsetY * 0.5}px) rotate(${-offsetY * 0.6}deg)`}}
-                className='paralax-6'
-                alt="paralax"
-            />
-            <img
-                src={IMG3}
-                style={{transform: `translateY(${-offsetY * 0.35}px)`}}
-                className='paralax-7'
-                alt="paralax"
-            />
-            <img
-                src={IMG2}
-                style={{transform: `translateY(${-offsetY * 0.5}px) rotate(${-offsetY * 0.05}deg)`}}
-                className='paralax-8'
-                alt="paralax"
-            />
+            {paralaxItems.map(paralaxItem => (
+                <img
+                    src={`img/paralax-item-${paralaxItem.IMG}.png`}
+                    style={{transform: `translateY(${-offsetY * `${paralaxItem.speedTranslate}`}px) rotate(${-offsetY * `${paralaxItem.speedRotate}`}deg)`}}
+                    className={`paralax-${paralaxItem.id}`}
+                    alt="paralax"
+                />
+            ))}
         </div>
     );
 };
