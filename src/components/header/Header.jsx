@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import './header.css';
 import CTA from './CTA';
-import ME from '/img/main-photo.png';
+import ME from '../../../public/img/main-photo.png';
 import HeaderSocial from "./HeaderSocial";
 import {BsArrowRightShort} from "react-icons/bs";
 import 'animate.css';
