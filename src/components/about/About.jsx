@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import './about.css';
-import ME from '/img/me-about.jpg';
+import ME from '../../../public/img/me-about.jpg';
 import {LangContext} from "../../App";
 
 const About = () => {
