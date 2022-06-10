@@ -1,8 +1,8 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from '../../img/portfolio1.jpg';
-import IMG2 from '../../img/portfolio2.jpg';
-import IMG3 from '../../img/portfolio3.jpg';
+import IMG1 from '/img/portfolio1.jpg';
+import IMG2 from '/img/portfolio2.jpg';
+import IMG3 from '/img/portfolio3.jpg';
 import {useContext} from "react";
 import {LangContext} from "../../App";
 
