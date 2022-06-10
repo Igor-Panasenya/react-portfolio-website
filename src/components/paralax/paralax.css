@@ -59,10 +59,11 @@
     }
 
     .paralax-3 {
-        right: -20px;
+        right: -40px;
+        width: 50%;
     }
     .paralax-4 {
-        left: -60px;
+        left: 20%;
     }
     .paralax-5 {
         left: -10px;
