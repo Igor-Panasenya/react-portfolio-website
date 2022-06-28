@@ -1,10 +1,11 @@
 .experience__content {
-    max-width: 100%;
+    max-width: 70%;
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    margin: 0 auto;
 }
 
 .experience__content:hover {
@@ -20,10 +21,9 @@
 }
 
 .experience__items {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
 .experience__item {
@@ -37,7 +37,7 @@
 .experience__item-icon {
     margin-top: 6px;
     color: var(--color-primary);
-    font-size: 78px;
+    font-size: 100px;
 }
 
 
@@ -57,5 +57,11 @@
     .experience__content {
         max-width: 90%;
         gap: 1rem;
+    }
+
+    .experience__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
 }

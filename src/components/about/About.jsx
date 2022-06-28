@@ -27,8 +27,8 @@ const About = () => {
                                 I have a higher technical education and I . . . Frontend Developer. <br/>
                                 <br/> About a year ago, I started to get involved in programming and chose the path of a web developer for myself.
                                 I have completed several HTML and CSS courses, and JavaScript course.
-                                At the moment, I am able to develop a front-end part of a full-fledged web application using React JS, React Router, React icons, React Components, etc.
-                                You can see my skills in the "Portfolio" section and understand what I'm capable of.
+                                At the moment, he is able to develop a front-end part of a full-fledged web application using React JS, Redux Toolkit, React Router, React Hooks, etc.
+                                My largest online store project can be seen in the Portfolio section.
                                 <br/>
                                 <br/> I will be glad to cooperate.
                             </p>
@@ -38,9 +38,8 @@ const About = () => {
                                 У меня высшее техническое образование и я . . . фронтэнд разработчик. <br/>
                                 <br/> Около года назад я начал увлекаться программированием и выбрал для себя путь вэб-разработчика.
                                 Я закончил несколько курсов по HTML и CSS, а также курс по JavaScript.
-                                На данный момент способен разработать фронтэнд часть полноценного вэб-приложения с использованием React JS, React Router, React icons, React Components и т.п.
-                                Мои навыки можно увидеть в разделе "Портфолио" и понять, на что я способен.
-                                {/*Мой самый крупный проект интернет-магазина можно увидеть в разделе Портфолио.*/}
+                                На данный момент способен разработать фронтэнд часть полноценного вэб-приложения с использованием React JS, Redux Toolkit, React Router, React Hooks и т.п.
+                                Мой самый крупный проект интернет-магазина можно увидеть в разделе Портфолио.
                                 <br/>
                                 <br/> Буду рад сотрудничеству.
                             </p>

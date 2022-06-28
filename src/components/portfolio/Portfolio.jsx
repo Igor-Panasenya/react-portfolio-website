@@ -6,18 +6,24 @@ import {LangContext} from "../../App";
 const portfolioArray = [
     {
         id: 1,
+        image: '/img/portfolio4.jpg',
+        github: 'https://github.com/Igor-Panasenya/cityman-store.git',
+        demo: 'https://cityman-store.vercel.app/'
+    },
+    {
+        id: 2,
         image: '/img/portfolio1.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-agency.git',
         demo: 'https://portfolio-agency.netlify.app/'
     },
     {
-        id: 2,
+        id: 3,
         image: '/img/portfolio2.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-revo.git',
         demo: 'https://portfolio-revo.netlify.app/'
     },
     {
-        id: 3,
+        id: 4,
         image: '/img/portfolio3.jpg',
         github: 'https://github.com/Igor-Panasenya/portfolio-creatives.git',
         demo: 'https://portfolio-creatives.netlify.app/'
