@@ -55,8 +55,8 @@ const Paralax = () => {
         },
     ]
     const [offsetY, setOffsetY] = useState(0)
-    const [clientXX, setClientXX] = useState(0)
-    const [clientYY, setClientYY] = useState(0)
+    const [mouseX, setMouseX] = useState(0)
+    const [mouseY, setMouseY] = useState(0)
     const handleScroll = () => setOffsetY(window.pageYOffset)
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
@@ -65,10 +65,9 @@ const Paralax = () => {
 
 
     const handleMove = (e) => {
-        setClientXX((e.clientX - window.innerWidth/2)/10);
-        setClientYY((e.clientY - window.innerHeight/2)/10);
+        setMouseX((e.clientX - window.innerWidth/2)/10);
+        setMouseY((e.clientY - window.innerHeight/2)/10);
     }
-    console.log(clientXX)
     useEffect(() => {
         window.addEventListener('mousemove', handleMove)
         return () => window.removeEventListener('mousemove', handleMove)
@@ -89,13 +88,13 @@ const Paralax = () => {
                 src="/img/paralax-mouse-item-1.png"
                 className='paralax-mouse'
                 alt="paralax"
-                style={{transform: `translateX(${clientXX}px) translateY(${clientYY * 0.5}px)`}}
+                style={{transform: `translateX(${mouseX}px) translateY(${mouseY * 0.5}px)`}}
             />
             <img
                 src="/img/paralax-mouse-item-2.png"
                 className='paralax-mouse'
                 alt="paralax"
-                style={{transform: `translateX(${clientXX * 0.5}px) translateY(${clientYY}px)`}}
+                style={{transform: `translateX(${mouseX * 0.5}px) translateY(${mouseY}px)`}}
             />
             
         </div>
