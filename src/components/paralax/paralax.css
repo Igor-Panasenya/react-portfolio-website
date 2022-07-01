@@ -82,4 +82,7 @@
         right: -100px;
         top: 6900px;
     }
+    .paralax-mouse {
+        display: none;
+    }
 }
