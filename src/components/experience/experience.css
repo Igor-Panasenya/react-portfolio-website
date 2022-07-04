@@ -33,11 +33,16 @@
     align-items: center;
     gap: 1rem;
 }
+.experience__item span {
+    border: red solid 1px;
+    padding: 0;
+}
 
 .experience__item-icon {
     margin-top: 6px;
     color: var(--color-primary);
     font-size: 100px;
+    border: red solid 1px;
 }
 
 

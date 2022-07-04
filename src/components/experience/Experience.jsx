@@ -16,10 +16,6 @@ const Experience = () => {
 
     const {langEng} = useContext(LangContext)
 
-    const experience = [
-
-    ]
-
     return (
         <section id='experience'>
 
