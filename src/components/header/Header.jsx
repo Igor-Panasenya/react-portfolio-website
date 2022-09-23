@@ -24,7 +24,6 @@ const Header = () => {
                     <img src='/img/main-photo.png' alt="me"/>
                 </div>
 
-
                     {/*КНОПКА ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА*/}
 
                     <div

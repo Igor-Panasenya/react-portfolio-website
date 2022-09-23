@@ -9,7 +9,7 @@ const Cta = () => {
 
     return (
         <div className="cta">
-            <a href={CV} download className='btn'>{langEng ? "Download CV" : "Скачать резюме"}</a>
+            {/*<a href={CV} download className='btn'>{langEng ? "Download CV" : "Скачать резюме"}</a>*/}
             <a href="#contact" className='btn btn-primary'>{langEng ? "Let's Talk" : "Связаться со мной"}</a>
         </div>
     );

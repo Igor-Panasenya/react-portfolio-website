@@ -23,25 +23,17 @@ const About = () => {
                         langEng
                         ? <p>
                                 Hello! <br/>
-                                My name is Igor <br/>
                                 I have a higher technical education and I . . . Frontend Developer. <br/>
-                                <br/> About a year ago, I started to get involved in programming and chose the path of a web developer for myself.
-                                I have completed several HTML and CSS courses, and JavaScript course.
-                                At the moment, he is able to develop a front-end part of a full-fledged web application using React JS, Redux Toolkit, React Router, React Hooks, etc.
-                                My largest online store project can be seen in the Portfolio section.
-                                <br/>
-                                <br/> I will be glad to cooperate.
+                                <br/> I specialize in frontend development using HTML, CSS and JavaScript, and I also develop web applications using React.JS with Redux Toolkit technology.
+                                <br/><br/> By contacting me, you get an attractive website for clients that has smooth animations, intriguing functionality and is fully responsive to the mobile version.
+                                <br/><br/> Glad to cooperate.
                             </p>
                         :    <p>
                                 Привет! <br/>
-                                Меня зовут Игорь. <br/>
                                 У меня высшее техническое образование и я . . . фронтэнд разработчик. <br/>
-                                <br/> Около года назад я начал увлекаться программированием и выбрал для себя путь вэб-разработчика.
-                                Я закончил несколько курсов по HTML и CSS, а также курс по JavaScript.
-                                На данный момент способен разработать фронтэнд часть полноценного вэб-приложения с использованием React JS, Redux Toolkit, React Router, React Hooks и т.п.
-                                Мой самый крупный проект интернет-магазина можно увидеть в разделе Портфолио.
-                                <br/>
-                                <br/> Буду рад сотрудничеству.
+                                <br/> Я специализируюсь на разработке фронтенд части сайтов на HTML, CSS и JavaScript, а также разрабатываю веб-приложения на React.JS с применением технологии Redux Toolkit.
+                                <br/><br/> Обращаясь ко мне, ты получаешь привлекательный для клиентов сайт, который имеет плавные анимации, интрересный функционал и полностью адаптивный к мобильной версии.
+                                <br/><br/> Буду рад сотрудничеству.
                             </p>
                     }
 

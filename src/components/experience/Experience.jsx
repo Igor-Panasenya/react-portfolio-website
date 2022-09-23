@@ -3,7 +3,7 @@ import './experience.css';
 import {AiFillHtml5} from 'react-icons/ai';
 import {FaCss3Alt} from 'react-icons/fa';
 import {DiSass} from 'react-icons/di';
-import {SiJavascript} from 'react-icons/si';
+import {SiAdobeaftereffects, SiAdobeillustrator, SiJavascript, SiTailwindcss} from 'react-icons/si';
 import {FaReact} from 'react-icons/fa';
 import {SiRedux} from 'react-icons/si';
 import {BsGithub} from 'react-icons/bs';
@@ -43,6 +43,11 @@ const Experience = () => {
                         </article>
 
                         <article className="experience__item">
+                            <SiTailwindcss className="experience__item-icon" />
+                            <h4>Tailwind CSS</h4>
+                        </article>
+
+                        <article className="experience__item">
                             <SiJavascript className="experience__item-icon" />
                             <h4>JavaScript</h4>
                         </article>
@@ -69,7 +74,17 @@ const Experience = () => {
 
                         <article className="experience__item">
                             <SiAdobephotoshop className="experience__item-icon" />
-                            <h4>Photoshop</h4>
+                            <h4>Adobe Photoshop</h4>
+                        </article>
+
+                        <article className="experience__item">
+                            <SiAdobeillustrator className="experience__item-icon" />
+                            <h4>Adobe Illustrator</h4>
+                        </article>
+
+                        <article className="experience__item">
+                            <SiAdobeaftereffects className="experience__item-icon" />
+                            <h4>Adobe After Effects</h4>
                         </article>
 
                     </div>

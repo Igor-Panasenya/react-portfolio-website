@@ -12,7 +12,7 @@ export const LangContext = createContext()
 
 const App = () => {
 
-    const [langEng, setLangEng] = useState(false)
+    const [langEng, setLangEng] = useState(true)
 
     return (
         <>
