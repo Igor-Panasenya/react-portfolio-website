@@ -14,7 +14,7 @@ const portfolioArray = [
         id: 6,
         image: '/img/portfolio6.jpg',
         github: 'https://github.com/Igor-Panasenya/TopBoost',
-        demo: 'https://top-boost-gamma.vercel.app/'
+        demo: 'https://portfolio-top-boost.vercel.app/'
     },
     {
         id: 5,
