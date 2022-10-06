@@ -4,12 +4,18 @@ import {useContext} from "react";
 import {LangContext} from "../../App";
 
 const portfolioArray = [
-    // {
-    //     id: 7,
-    //     image: '/img/portfolio7.jpg',
-    //     github: 'https://github.com/Igor-Panasenya/GoTrip',
-    //     demo: 'https://portfolio-go-trip.netlify.app/'
-    // },
+    {
+        id: 8,
+        image: '/img/portfolio8.jpg',
+        github: 'https://github.com/Igor-Panasenya/mr.snark',
+        demo: 'https://portfolio-mr-snark.netlify.app/'
+    },
+    {
+        id: 7,
+        image: '/img/portfolio7.jpg',
+        github: 'https://github.com/Igor-Panasenya/go-trip',
+        demo: 'https://portfolio-go-trip.vercel.app/'
+    },
     {
         id: 6,
         image: '/img/portfolio6.jpg',
@@ -60,7 +66,7 @@ const Portfolio = () => {
             <div className="container portfolio__container">
                 {portfolioArray.map(({id, image, title, github, demo}) => {
                         return (
-                            <article key={id} className="portfolio__item">
+                            <article key={id} className="portfolio__item" data-aos="fade-up">
                                 <div className="portfolio__item-image" style={{backgroundImage: `url(${image})`}}>
                                     {/*<img src={image} alt="portfolio" />*/}
                                 </div>

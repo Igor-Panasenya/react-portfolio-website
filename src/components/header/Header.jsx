@@ -13,14 +13,14 @@ const Header = () => {
     return (
         <header>
             <div className="container header__container">
-                <h5>{langEng ? "Hello I'm" : "Привет! Меня зовут"}</h5>
-                <h1>{langEng ? "PANASENYA IGOR" : "Панасеня Игорь"}</h1>
-                <h5 className="text-light">{langEng ? "Frontend Developer" : "Фронтэнд разработчик"}</h5>
+                <h5 data-aos="fade-up">{langEng ? "Hello I'm" : "Привет! Меня зовут"}</h5>
+                <h1 data-aos="fade-up" data-aos-delay="100">{langEng ? "PANASENYA IGOR" : "Панасеня Игорь"}</h1>
+                <h5 className="text-light" data-aos="fade-up" data-aos-delay="200">{langEng ? "Frontend Developer" : "Фронтэнд разработчик"}</h5>
                 <CTA />
 
                 <HeaderSocial />
 
-                <div className="me">
+                <div className="me" data-aos="fade-up" data-aos-delay="400">
                     <img src='/img/main-photo.png' alt="me"/>
                 </div>
 
@@ -29,6 +29,7 @@ const Header = () => {
                     <div
                         className={langEng ? 'lang-btn active' : 'lang-btn'}
                         onClick={() => setLangEng(!langEng)}
+                        data-aos="fade-up"
                     >
                         <span className='lang-btn-circle'></span>
 

@@ -2,12 +2,13 @@ import React, {useContext} from 'react';
 import './about.css';
 import {LangContext} from "../../App";
 
+
 const About = () => {
 
     const {langEng} = useContext(LangContext)
 
     return (
-        <section id='about'>
+        <section data-aos="fade-up" id='about'>
             {langEng && <h5>Get To Know</h5>}
             <h2>{langEng ? "About Me" : "Обо мне"}</h2>
 
