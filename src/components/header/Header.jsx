@@ -25,18 +25,19 @@ const Header = () => {
                 </div>
 
                     {/*КНОПКА ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА*/}
-
-                    <div
+                <div data-aos="fade-up">
+                    <button
                         className={langEng ? 'lang-btn active' : 'lang-btn'}
                         onClick={() => setLangEng(!langEng)}
-                        data-aos="fade-up"
                     >
                         <span className='lang-btn-circle'></span>
 
                         <span className='langRu'>ru</span>
                         <span className='langEng'>eng</span>
 
-                    </div>
+                    </button>
+                </div>
+
 
                 <a href="#contact" className='scroll__down'>{langEng ? "Scroll Down" : "Вниз"}<BsArrowRightShort size={20}/></a>
             </div>

@@ -1,28 +1,37 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import './contact.css';
 import {HiOutlineMail} from 'react-icons/hi';
 import {FaTelegramPlane} from 'react-icons/fa';
 import {FaViber} from 'react-icons/fa';
-import {useRef} from 'react';
 import emailjs from 'emailjs-com';
 import {useContext} from "react";
 import {LangContext} from "../../App";
 
+import { useForm } from "react-hook-form";
+import ErrorText from "../UI/errorText/ErrorText";
+import ModalMessageSend from "../UI/modalMessageSend/ModalMessageSend";
+
 const Contact = () => {
 
     const {langEng} = useContext(LangContext)
-    const form = useRef();
+    const [sendMessage, setSendMessage] = useState(false);
+    setTimeout(setSendMessage, 3000)
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors }
+    } = useForm();
 
-        emailjs.sendForm('service_54r4e6g', 'template_i2hg9qo', form.current, '5kxrwT6WBLgUTAtfW')
+    const sendEmail = (formData) => {
+        emailjs.send('service_54r4e6g', 'template_i2hg9qo', formData, '5kxrwT6WBLgUTAtfW')
             .then((result) => {
             }, (error) => {
             });
-        e.target.reset()
+        reset();
+        setSendMessage(true);
     };
-
 
     return (
         <section id='contact'>
@@ -55,12 +64,50 @@ const Contact = () => {
                     </article>
 
                 </div>
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='Your Full Name' required  data-aos="fade-up"/>
-                    <input type="email" name='email' placeholder='Your Email' required  data-aos="fade-up" data-aos-delay="150"/>
-                    <textarea name="message" rows="7" placeholder='Your Message' required data-aos="fade-up" data-aos-delay="300"></textarea>
-                    <button type='submit' className="btn btn-primary" data-aos="fade-up" data-aos-delay="450">{langEng ? "Send a message" : "Отправить сообщение"}</button>
+                <form onSubmit={handleSubmit(sendEmail)}>
+
+                    <label data-aos="fade-up">
+                        <input placeholder={langEng ? "Your Full Name" : "Имя Фамилия Отчество"} {...register('name', {
+                            required: {
+                                value: true,
+                                message: `${langEng ? "The field is required." : "Поле обязательно к заполнению."}`
+                            },
+                        })} />
+                        <div>{errors?.name && <ErrorText text={errors.name.message}/>}</div>
+                    </label>
+                    <label data-aos="fade-up" data-aos-delay="150">
+                        <input placeholder={langEng ? "Your E-mail" : "Ваш E-mail"} {...register('email', {
+                            required: {
+                                value: true,
+                                message: `${langEng ? "The field is required." : "Поле обязательно к заполнению."}`
+                            },
+                            pattern: {
+                                value: /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i,
+                                message: `${langEng ? "Invalid E-mail." : "Некорректный E-mail."}`
+                            }
+
+                        })} />
+                        <div>{errors?.email && <ErrorText text={errors.email.message}/>}</div>
+                    </label>
+                    <label data-aos="fade-up" data-aos-delay="300">
+                        <textarea placeholder={langEng ? "Your Message" : "Ваше сообщение"} {...register('message', {
+                            required: {
+                                value: true,
+                                message: `${langEng ? "The field is required." : "Поле обязательно к заполнению."}`
+                            },
+                            minLength: {
+                                value: 10,
+                                message: `${langEng ? "No less than 10 characters." : "Не менее 10 символов."}`
+                            }
+
+                        })} />
+                        <div>{errors?.message && <ErrorText text={errors.message.message}/>}</div>
+                    </label>
+
+                    <input type="submit" value={langEng ? "Send message" : "Отправить сообщение"} className="btn btn-primary" data-aos="fade-up" data-aos-delay="450"/>
+                    {sendMessage && <ModalMessageSend />}
                 </form>
+
             </div>
         </section>
     );

@@ -1,7 +1,12 @@
 import React from 'react';
-import './portfolio.css';
+import './portfolio.scss';
 import {useContext} from "react";
 import {LangContext} from "../../App";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+import PortfolioItem from "../portfolioItem/PortfolioItem";
 
 const portfolioArray = [
     {
@@ -63,21 +68,35 @@ const Portfolio = () => {
             {langEng && <h5>My Resent Work</h5>}
             <h2>{langEng ? 'Portfolio' : 'Портфолио'}</h2>
 
-            <div className="container portfolio__container">
-                {portfolioArray.map(({id, image, title, github, demo}) => {
+            <div className="container">
+
+                <Swiper
+                    navigation={true}
+                    slidesPerView={1}
+                    modules={[Navigation]}
+                    loop={true}
+                    className="mySwiper"
+                >
+
+                    {portfolioArray.map(({id, image, title, github, demo}) => {
                         return (
-                            <article key={id} className="portfolio__item" data-aos="fade-up">
-                                <div className="portfolio__item-image" style={{backgroundImage: `url(${image})`}}>
-                                    {/*<img src={image} alt="portfolio" />*/}
-                                </div>
-                                <div className="portfolio__item-cta">
-                                    <a href={github} className="btn" target='_blank'>Github</a>
-                                    <a href={demo} className="btn btn-primary" target='_blank'>{langEng ? 'Live Demo' : 'Просмотр'}</a>
-                                </div>
-                            </article>
+
+                            <SwiperSlide key={id}>
+
+                                <PortfolioItem
+                                    image={image}
+                                    github={github}
+                                    demo={demo}
+                                    data-aos="fade-up"
+                                />
+
+                            </SwiperSlide>
+
                         )
                     })
-                }
+                    }
+
+                </Swiper>
 
             </div>
         </section>

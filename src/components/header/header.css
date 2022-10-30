@@ -53,7 +53,7 @@ header {
 }
 .lang-btn .langEng {
     position: relative;
-    left: -6px;
+    left: 0;
     opacity: 1;
     transition: all ease 0.3s;
 }

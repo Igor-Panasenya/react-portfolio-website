@@ -22,7 +22,7 @@ const Experience = () => {
             {langEng && <h5>What Skills I Have</h5>}
             <h2>{langEng ? "My Experience" : "Мои навыки"}</h2>
 
-            <div className="container" data-aos="flip-right">
+            <div className="container" data-aos="fade-up">
                 <div className="experience__content">
                     <h3> {langEng ? "Frontend Development" : "Для Фронтэнд разработки"}</h3>
                     <div className="experience__items">

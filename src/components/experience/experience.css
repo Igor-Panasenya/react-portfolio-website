@@ -60,11 +60,18 @@
     .experience__content {
         max-width: 90%;
         gap: 1rem;
+        padding: 1rem .5rem;
+    }
+
+    .experience__item-icon {
+        font-size: 50px;
     }
 
     .experience__items {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: .5rem;
+    }
+
+    h4 {
+        font-size: .7rem;
     }
 }

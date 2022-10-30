@@ -17,7 +17,7 @@
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: var(--transition)!important;
 }
 
 .contact__option:hover {
@@ -38,19 +38,30 @@
 
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
 input, textarea {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
-    resize: none;
     color: var(--color-white)
+}
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 295px;
+    height: 100%;
+}
+::placeholder {
+    font-size: .9rem;
 }
 
 /* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
@@ -59,16 +70,5 @@ input, textarea {
     .contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-}
-
-/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
-
-@media screen and (max-width: 600px) {
-    .contact__container {
-        width: var(--container-width: sm)
-    }
-    form .btn {
-        margin: 0 auto;
     }
 }

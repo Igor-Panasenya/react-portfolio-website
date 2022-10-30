@@ -1,0 +1,36 @@
+.modal-message-send {
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  color: var(--color-primary);
+
+  animation: modal-animate 2s linear;
+  opacity: 0;
+}
+
+@keyframes modal-animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----- */
+
+@media screen and (max-width: 1024px) {
+  .modal-message-send {
+    bottom: -50px;
+  }
+}

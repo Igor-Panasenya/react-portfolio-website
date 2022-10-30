@@ -1,0 +1,19 @@
+//custom style slider
+.swiper {
+    overflow: visible!important;
+
+    .swiper-slide {
+        opacity: .5;
+        filter: blur(5px);
+    }
+    .swiper-slide-active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        color: var(--color-primary);
+    }
+    .swiper-button-next {
+        color: var(--color-primary);
+    }
+}
