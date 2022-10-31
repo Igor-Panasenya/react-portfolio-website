@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './porrtfolioItem.scss';
 import {useContext} from "react";
 import {LangContext} from "../../App";
@@ -8,8 +8,19 @@ const PortfolioItem = ({image, github, demo}) => {
     const {langEng} = useContext(LangContext);
     const [isClickMore, setIsClickMore] = useState(false);
 
+    //  ЗАКРЫТИЕ MORE ПРИ КЛИКЕ ВНЕ ОБЛАСТИ РАБОТЫ
+    const sortRef = useRef()
+    const outSideClick = (e) => {
+        if (!e.path.includes(sortRef.current)) {
+            setIsClickMore(false);
+        }
+    }
+    useEffect(() => {
+        document.body.addEventListener('click', outSideClick)
+    }, [])
+
     return (
-        <div className="card-box">
+        <div ref={sortRef} className="card-box" onClick={() => setIsClickMore(!isClickMore)}>
             <div className={isClickMore ? "card active" : "card"}>
                 <div className="lines"></div>
 
