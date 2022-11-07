@@ -10,7 +10,7 @@ import PortfolioItem from "../portfolioItem/PortfolioItem";
 
 const portfolioArray = [
     {
-        id: 9,
+        id: 19,
         image: '/img/portfolio9.jpg',
         github: 'https://github.com/Igor-Panasenya/',
         demo: 'https://portfolio-beats-3.netlify.app/'
