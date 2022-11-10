@@ -11,7 +11,7 @@ const ModalMessageSend = () => {
     return (
         <div className='modal-message-send'>
             <GoCheck size={30}/>
-            {langEng ? "Message successfully sent" : "Сообщение успешно отправлено."}
+            {langEng ? "Message successfully sent" : "Сообщение отправлено."}
         </div>
     );
 };

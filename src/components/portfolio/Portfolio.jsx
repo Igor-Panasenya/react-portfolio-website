@@ -12,7 +12,7 @@ const portfolioArray = [
     {
         id: 19,
         image: '/img/portfolio9.jpg',
-        github: 'https://github.com/Igor-Panasenya/',
+        github: 'https://github.com/Igor-Panasenya/beats-3/',
         demo: 'https://portfolio-beats-3.netlify.app/'
     },
     {
