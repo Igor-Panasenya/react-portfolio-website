@@ -1,0 +1,169 @@
+.card {
+  position: relative;
+  margin: 0 auto;
+  width: 60rem;
+  height: 30rem;
+  transition: 0.5s;
+}
+.card:hover .card__image .card__image-background {
+  transform: translateY(-85px);
+}
+.card.active .card__image-box {
+  transform: translate(-50%, -40%) scale(0.5);
+}
+.card.active .card__description {
+  width: 33rem;
+  height: 31rem;
+  transform: translate(-50%, -80%);
+}
+.card.active .card__description .btn-click {
+  bottom: 15px;
+}
+.card.active .card__description .btn-click::before {
+  left: 44px;
+}
+.card.active .card__description .btn-click::after {
+  right: 44px;
+}
+.card.active .card__description .description-content {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.card .card__image-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60rem;
+  height: 30rem;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 20px var(--color-bg);
+}
+.card .card__image-box .lines {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary-variant);
+  overflow: hidden;
+  border-radius: 5px;
+}
+.card .card__image-box .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80rem;
+  height: 20rem;
+  background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+  animation: animate 10s linear infinite;
+}
+.card .card__image-box .lines::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 5px;
+}
+.card .card__image-box .card__image {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 59.5rem;
+  height: 29.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 3;
+}
+.card .card__image-box .card__image .card__image-background {
+  background-image: url("https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1080&q=80&w=1920&s=6827f20b49372d5b3600aaffa1baa4a9%201920w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=911&q=80&w=1620&s=e5d92f2c88c6013bbb92e48e1661d11a%201620w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=743&q=80&w=1320&s=737d42208eba57e8ca3d059f2e117f3e%201320w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=574&q=80&w=1020&s=04baffc4174a9b52fbfc5af8c8985e52%201020w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=540&q=80&w=960&s=0efe8af1e6e8cb281a7454efa78b4009%20960w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=371&q=80&w=660&s=e1cef2ba0f3198dafc0f2813e7fcfee1%20660w,%20https://maxonassets.imgix.net/images/News/20191217_Detective_Pikachu_Header0.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=304&q=80&w=540&s=cca06cedc6ff54f55b2a538f58fdc342%20540w");
+  background-position: top center;
+  background-size: cover;
+  width: 60rem;
+  height: 35rem;
+  transition: all 0.5s ease;
+  z-index: 4;
+}
+.card .card__description {
+  position: absolute;
+  top: 27rem;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 6rem;
+  width: 63rem;
+  background-color: var(--color-bg-variant);
+  z-index: 2;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.card .card__description .description-content {
+  position: absolute;
+  width: 25rem;
+  top: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.5s ease;
+}
+.card .card__description .description-content .description-list {
+  width: 100%;
+}
+.card .card__description .description-content .description-list .description-item {
+  display: flex;
+  gap: 0.5rem;
+}
+.card .card__description .description-content .portfolio__item-cta {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.card .card__description .btn-click {
+  cursor: pointer;
+  position: absolute;
+  width: 94px;
+  height: 25px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  z-index: 10;
+}
+.card .card__description .btn-click::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  transition: var(--transition);
+  transform: rotate(20deg);
+}
+.card .card__description .btn-click::after {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  transition: var(--transition);
+  transform: rotate(-20deg);
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=card.css.map */

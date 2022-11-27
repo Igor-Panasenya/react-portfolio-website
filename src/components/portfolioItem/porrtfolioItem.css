@@ -5,6 +5,12 @@
   height: 42rem;
   cursor: pointer;
 }
+.card-box:hover .card .portfolio__item .portfolio__item-image {
+  filter: blur(5px);
+}
+.card-box:hover .card .portfolio__item .portfolio__item-description {
+  opacity: 1;
+}
 .card-box .card {
   position: absolute;
   margin: 0 auto;
@@ -52,6 +58,7 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  overflow: hidden;
 }
 .card-box .card .portfolio__item .portfolio__item-image {
   position: relative;
@@ -62,6 +69,35 @@
   height: 37rem;
   width: 100%;
   z-index: 5;
+}
+.card-box .card .portfolio__item .portfolio__item-description {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: var(--color-primary-variant);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
+.card-box .card .portfolio__item .portfolio__item-description h2 {
+  text-align: start;
+  color: var(--color-primary);
+}
+.card-box .card .portfolio__item .portfolio__item-description .description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+.card-box .card .portfolio__item .portfolio__item-description .description-list .description-item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--color-white);
 }
 .card-box .card .portfolio__item .portfolio__item-cta {
   position: absolute;

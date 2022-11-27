@@ -1,9 +1,9 @@
-import React, {useEffect, useRef, useState} from 'react';
-import './porrtfolioItem.scss';
-import {useContext} from "react";
+import React, {useContext, useEffect, useRef} from 'react';
+import { useState } from 'react';
+import './card.scss';
 import {LangContext} from "../../App";
 
-const PortfolioItem = ({image, github, demo, description}) => {
+const Card = ({image, github, demo, description}) => {
 
     const {langEng} = useContext(LangContext);
     const [isClickMore, setIsClickMore] = useState(false);
@@ -19,37 +19,42 @@ const PortfolioItem = ({image, github, demo, description}) => {
         document.body.addEventListener('click', outSideClick)
     }, [])
 
-
     return (
-        <div ref={sortRef} className="card-box" onClick={() => setIsClickMore(!isClickMore)}>
-            <div className={isClickMore ? "card active" : "card"}>
+        <div ref={sortRef} className={isClickMore ? "card active" : "card"}>
+            <div className="card__image-box">
                 <div className="lines"></div>
+                <div className="card__image">
+                    <div className="card__image-background" style={{backgroundImage: `url(${image})`}}></div>
+                </div>
+            </div>
+            <div className="card__description">
 
-                <div className="portfolio__item">
-                    <div className="portfolio__item-image" style={{backgroundImage: `url(${image})`}}></div>
-                    <div className="portfolio__item-description">
-                        <h2>Implemented:</h2>
+                <div className="description-content">
+
+                    <h3>{langEng ? 'Implemented:' : 'Реализовано'}</h3>
 
                         <ul className="description-list">
 
-                            {description.map((descriptionItem, index) =>
+                            {description.eng.map((descriptionItem, index) =>
                                 <li key={index} className="description-item">
                                     <article className="description-item__title">{descriptionItem.title}</article> -
                                     <span className="description-item__body">{descriptionItem.body}</span>
                                 </li>
                             )}
-
                         </ul>
-                    </div>
+
+
                     <div className="portfolio__item-cta">
                         <a href={github} className="btn" target='_blank'>Github</a>
                         <a href={demo} className="btn btn-primary" target='_blank'>{langEng ? 'Live Demo' : 'Просмотр'}</a>
                     </div>
-                    <button onClick={() => setIsClickMore(!isClickMore)} className="portfolio__item-more"></button>
                 </div>
+
+                <button onClick={() => setIsClickMore(!isClickMore)} className="btn-click"></button>
             </div>
         </div>
+    
     );
 };
 
-export default PortfolioItem;
+export default Card;

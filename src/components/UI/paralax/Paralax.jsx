@@ -77,6 +77,7 @@ const Paralax = () => {
         <div className='paralax'>
             {paralaxItems.map(paralaxItem => (
                 <img
+                    key={paralaxItem.id}
                     src={`img/paralax-item-${paralaxItem.IMG}.png`}
                     style={{transform: `translateY(${-offsetY * `${paralaxItem.speedTranslate}`}px) rotate(${-offsetY * `${paralaxItem.speedRotate}`}deg)`}}
                     className={`paralax-${paralaxItem.id}`}
