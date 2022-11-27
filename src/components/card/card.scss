@@ -185,3 +185,118 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .card {
+        width: 40rem;
+        height: 25rem;
+
+        &.active {
+            .card__image-box {
+                transform: translate(-50%, -40%) scale(.5);
+            }
+            .card__description {
+                width: 25rem;
+                height: 31.5rem;
+                transform: translate(-50%, -80%);
+            }
+        }
+        .card__image-box {
+            width: 40rem;
+            height: 25rem;
+
+            .card__image {
+                width: 39.5rem;
+                height: 24.5rem;
+
+                .card__image-background {
+                    width: 40rem;
+                    height: 30rem;
+                }
+            }
+        }
+        .card__description {
+            top: 23rem;
+            height: 6rem;
+            width: 45rem;
+
+            .description-content {
+                width: 20rem;
+                top: 11rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .card {
+        position: relative;
+        margin: 0 auto;
+        width: 12rem;
+        height: 15rem;
+        transition: 0.5s;
+
+        &.active {
+            .card__image-box {
+                transform: translate(-50%, -40%) scale(.5);
+            }
+            .card__description {
+                width: 90vw;
+                height: 20rem;
+                transform: translate(-50%, -40%);
+
+                .btn-click {
+                    bottom: 10px;
+                }
+                .btn-click::before {
+                    left: 29px;
+                }
+                .btn-click::after {
+                    right: 29px;
+                }
+            }
+        }
+        .card__image-box {
+            width: 12rem;
+            height: 15rem;
+
+            .lines {
+                &::before {
+                    width: 20rem;
+                    height: 5rem;
+                }
+            }
+
+            .card__image {
+                width: 11.5rem;
+                height: 14.5rem;
+
+                .card__image-background {
+                    width: 12rem;
+                    height: 20rem;
+                }
+            }
+        }
+        .card__description {
+            top: 12rem;
+            height: 6rem;
+            width: 15rem;
+
+            .description-content {
+                width: 80%;
+                top: 3rem;
+                font-size: .8rem;
+            }
+            .btn-click {
+                width: 64px;
+
+                &::before {
+                    width: 34px;
+
+                }
+                &::after {
+                    width: 34px;
+                }
+            }
+        }
+    }
+}

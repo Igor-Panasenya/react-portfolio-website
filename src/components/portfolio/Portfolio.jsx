@@ -86,19 +86,19 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
+                    body: 'SASS preprocessor'
                 },
                 {
                     title: 'Animation',
-                    body: 'AOS Library'
+                    body: 'AOS Library, animation CSS'
                 },
                 {
-                    title: 'Slider',
-                    body: 'Swiper.js'
+                    title: 'Cart',
+                    body: 'Redux Toolkit, react-redux'
                 },
                 {
-                    title: 'Routing',
-                    body: 'React Router v6'
+                    title: 'Form',
+                    body: 'React Hook Form'
                 },
             ],
             ru: [
@@ -112,19 +112,19 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
+                    body: 'SASS preprocessor'
                 },
                 {
                     title: 'Анимация',
-                    body: 'AOS Library'
+                    body: 'AOS Library, animation CSS'
                 },
                 {
-                    title: 'Слайдер',
-                    body: 'Swiper.js'
+                    title: 'Корзина',
+                    body: 'Redux Toolkit, react-redux'
                 },
                 {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
+                    title: 'Форма',
+                    body: 'React Hook Form'
                 },
             ]
         }
@@ -146,7 +146,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
+                    body: 'SASS preprocessor'
                 },
                 {
                     title: 'Animation',
@@ -157,8 +157,8 @@ const portfolioArray = [
                     body: 'Swiper.js'
                 },
                 {
-                    title: 'Routing',
-                    body: 'React Router v6'
+                    title: 'Form',
+                    body: 'React Hook Form'
                 },
             ],
             ru: [
@@ -172,7 +172,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
+                    body: 'Препроцессор SASS'
                 },
                 {
                     title: 'Анимация',
@@ -183,8 +183,8 @@ const portfolioArray = [
                     body: 'Swiper.js'
                 },
                 {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
+                    title: 'Форма',
+                    body: 'React Hook Form'
                 },
             ]
         }
@@ -206,19 +206,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Animation',
-                    body: 'AOS Library'
+                    body: 'SASS preprocessor'
                 },
                 {
                     title: 'Slider',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
                 },
             ],
             ru: [
@@ -232,19 +224,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Анимация',
-                    body: 'AOS Library'
+                    body: 'Препроцессор SASS'
                 },
                 {
                     title: 'Слайдер',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
                 },
             ]
         }
@@ -261,24 +245,12 @@ const portfolioArray = [
                     body: 'HTML'
                 },
                 {
-                    title: 'UI',
-                    body: 'React.JS, JSX'
-                },
-                {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
+                    body: 'SASS preprocessor'
                 },
                 {
-                    title: 'Animation',
-                    body: 'AOS Library'
-                },
-                {
-                    title: 'Slider',
-                    body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
+                    title: 'Features',
+                    body: 'JavaScript'
                 },
             ],
             ru: [
@@ -287,24 +259,12 @@ const portfolioArray = [
                     body: 'HTML'
                 },
                 {
-                    title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
-                },
-                {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
+                    body: 'Препроцессор SASS'
                 },
                 {
-                    title: 'Анимация',
-                    body: 'AOS Library'
-                },
-                {
-                    title: 'Слайдер',
-                    body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
+                    title: 'Функционал',
+                    body: 'JavaScript'
                 },
             ]
         }
@@ -321,24 +281,12 @@ const portfolioArray = [
                     body: 'HTML'
                 },
                 {
-                    title: 'UI',
-                    body: 'React.JS, JSX'
-                },
-                {
                     title: 'Styles',
                     body: 'Tailwind CSS'
                 },
                 {
-                    title: 'Animation',
-                    body: 'AOS Library'
-                },
-                {
                     title: 'Slider',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
                 },
             ],
             ru: [
@@ -347,24 +295,12 @@ const portfolioArray = [
                     body: 'HTML'
                 },
                 {
-                    title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
-                },
-                {
                     title: 'Стилизация',
                     body: 'Tailwind CSS'
                 },
                 {
-                    title: 'Анимация',
-                    body: 'AOS Library'
-                },
-                {
                     title: 'Слайдер',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
                 },
             ]
         }
@@ -386,11 +322,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Animation',
-                    body: 'AOS Library'
+                    body: 'SASS preprocessor'
                 },
                 {
                     title: 'Slider',
@@ -399,6 +331,10 @@ const portfolioArray = [
                 {
                     title: 'Routing',
                     body: 'React Router v6'
+                },
+                {
+                    title: 'Cart',
+                    body: 'Redux Toolkit, react-redux'
                 },
             ],
             ru: [
@@ -412,11 +348,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Анимация',
-                    body: 'AOS Library'
+                    body: 'Препроцессор SASS'
                 },
                 {
                     title: 'Слайдер',
@@ -425,6 +357,10 @@ const portfolioArray = [
                 {
                     title: 'Роутинг',
                     body: 'React Router v6'
+                },
+                {
+                    title: 'Корзина',
+                    body: 'Redux Toolkit, react-redux'
                 },
             ]
         }
@@ -446,19 +382,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Animation',
-                    body: 'AOS Library'
+                    body: 'CSS'
                 },
                 {
                     title: 'Slider',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
                 },
             ],
             ru: [
@@ -472,19 +400,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Анимация',
-                    body: 'AOS Library'
+                    body: 'CSS'
                 },
                 {
                     title: 'Слайдер',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
                 },
             ]
         }
@@ -506,19 +426,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Animation',
-                    body: 'AOS Library'
+                    body: 'CSS'
                 },
                 {
                     title: 'Slider',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
                 },
             ],
             ru: [
@@ -532,19 +444,11 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Анимация',
-                    body: 'AOS Library'
+                    body: 'CSS'
                 },
                 {
                     title: 'Слайдер',
                     body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
                 },
             ]
         }
@@ -566,19 +470,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Styles',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Animation',
-                    body: 'AOS Library'
-                },
-                {
-                    title: 'Slider',
-                    body: 'Swiper.js'
-                },
-                {
-                    title: 'Routing',
-                    body: 'React Router v6'
+                    body: 'CSS'
                 },
             ],
             ru: [
@@ -592,19 +484,7 @@ const portfolioArray = [
                 },
                 {
                     title: 'Стилизация',
-                    body: 'Tailwind CSS'
-                },
-                {
-                    title: 'Анимация',
-                    body: 'AOS Library'
-                },
-                {
-                    title: 'Слайдер',
-                    body: 'Swiper.js'
-                },
-                {
-                    title: 'Роутинг',
-                    body: 'React Router v6'
+                    body: 'CSS'
                 },
             ]
         }

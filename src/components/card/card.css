@@ -165,5 +165,101 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+@media screen and (max-width: 1400px) {
+  .card {
+    width: 40rem;
+    height: 25rem;
+  }
+  .card.active .card__image-box {
+    transform: translate(-50%, -40%) scale(0.5);
+  }
+  .card.active .card__description {
+    width: 25rem;
+    height: 31.5rem;
+    transform: translate(-50%, -80%);
+  }
+  .card .card__image-box {
+    width: 40rem;
+    height: 25rem;
+  }
+  .card .card__image-box .card__image {
+    width: 39.5rem;
+    height: 24.5rem;
+  }
+  .card .card__image-box .card__image .card__image-background {
+    width: 40rem;
+    height: 30rem;
+  }
+  .card .card__description {
+    top: 23rem;
+    height: 6rem;
+    width: 45rem;
+  }
+  .card .card__description .description-content {
+    width: 20rem;
+    top: 11rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .card {
+    position: relative;
+    margin: 0 auto;
+    width: 12rem;
+    height: 15rem;
+    transition: 0.5s;
+  }
+  .card.active .card__image-box {
+    transform: translate(-50%, -40%) scale(0.5);
+  }
+  .card.active .card__description {
+    width: 90vw;
+    height: 20rem;
+    transform: translate(-50%, -40%);
+  }
+  .card.active .card__description .btn-click {
+    bottom: 10px;
+  }
+  .card.active .card__description .btn-click::before {
+    left: 29px;
+  }
+  .card.active .card__description .btn-click::after {
+    right: 29px;
+  }
+  .card .card__image-box {
+    width: 12rem;
+    height: 15rem;
+  }
+  .card .card__image-box .lines::before {
+    width: 20rem;
+    height: 5rem;
+  }
+  .card .card__image-box .card__image {
+    width: 11.5rem;
+    height: 14.5rem;
+  }
+  .card .card__image-box .card__image .card__image-background {
+    width: 12rem;
+    height: 20rem;
+  }
+  .card .card__description {
+    top: 12rem;
+    height: 6rem;
+    width: 15rem;
+  }
+  .card .card__description .description-content {
+    width: 80%;
+    top: 3rem;
+    font-size: 0.8rem;
+  }
+  .card .card__description .btn-click {
+    width: 64px;
+  }
+  .card .card__description .btn-click::before {
+    width: 34px;
+  }
+  .card .card__description .btn-click::after {
+    width: 34px;
+  }
+}
 
 /*# sourceMappingURL=card.css.map */
