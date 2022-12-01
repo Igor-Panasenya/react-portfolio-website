@@ -1,6 +1,7 @@
 //custom style slider
 .swiper {
     overflow: visible!important;
+    width: 100%;
 
     .swiper-slide {
         opacity: .5;
@@ -15,5 +16,25 @@
     }
     .swiper-button-next {
         color: var(--color-primary);
+    }
+}
+@media screen and (max-width: 850px) {
+    .swiper {
+        overflow: visible!important;
+        width: 100vw!important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .swiper-button-prev {
+            position: absolute;
+            left: 5px;
+            top: 50%;
+        }
+        .swiper-button-next {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+        }
     }
 }
