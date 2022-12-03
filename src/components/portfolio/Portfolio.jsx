@@ -73,7 +73,7 @@ const portfolioArray = [
         id: 9,
         image: '/img/portfolio9.jpg',
         github: 'https://github.com/Igor-Panasenya/beats-3/',
-        demo: 'https://portfolio-beats-3.netlify.app/',
+        demo: 'https://beats-3.vercel.app/',
         description: {
             eng: [
                 {
