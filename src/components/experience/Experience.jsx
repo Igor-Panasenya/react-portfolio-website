@@ -28,6 +28,16 @@ const Experience = () => {
                     <div className="experience__items">
 
                         <article className="experience__item">
+                            <FaReact className="experience__item-icon" />
+                            <h4>React.js</h4>
+                        </article>
+
+                        <article className="experience__item">
+                            <SiJavascript className="experience__item-icon" />
+                            <h4>JavaScript</h4>
+                        </article>
+
+                        <article className="experience__item">
                             <AiFillHtml5 className="experience__item-icon" />
                             <h4>HTML</h4>
                         </article>
@@ -45,16 +55,6 @@ const Experience = () => {
                         <article className="experience__item">
                             <SiTailwindcss className="experience__item-icon" />
                             <h4>Tailwind CSS</h4>
-                        </article>
-
-                        <article className="experience__item">
-                            <SiJavascript className="experience__item-icon" />
-                            <h4>JavaScript</h4>
-                        </article>
-
-                        <article className="experience__item">
-                            <FaReact className="experience__item-icon" />
-                            <h4>React.js</h4>
                         </article>
 
                         <article className="experience__item">

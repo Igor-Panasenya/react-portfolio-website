@@ -10,6 +10,66 @@ import Card from "../card/Card";
 
 const portfolioArray = [
     {
+        id: 11,
+        image: '/img/portfolio11.jpg',
+        github: 'https://github.com/Igor-Panasenya/social-media-share-me',
+        demo: 'https://share-me-portfolio.netlify.app/',
+        description: {
+            eng: [
+                {
+                    title: 'Markup',
+                    body: 'JSX'
+                },
+                {
+                    title: 'UI',
+                    body: 'React.JS'
+                },
+                {
+                    title: 'Backend',
+                    body: 'Sanity'
+                },
+                {
+                    title: 'Styles',
+                    body: 'Tailwind CSS'
+                },
+                {
+                    title: 'Animation',
+                    body: 'React Spring'
+                },
+                {
+                    title: 'Routing',
+                    body: 'React Router v6'
+                },
+            ],
+            ru: [
+                {
+                    title: 'Разметка',
+                    body: 'JSX'
+                },
+                {
+                    title: 'Пользовательский интерфейс',
+                    body: 'React.JS'
+                },
+                {
+                    title: 'Бэкенд',
+                    body: 'Sanity'
+                },
+                {
+                    title: 'Стилизация',
+                    body: 'Tailwind CSS'
+                },
+                {
+                    title: 'Анимация',
+                    body: 'React Spring'
+                },
+                {
+                    title: 'Роутинг',
+                    body: 'React Router v6'
+                },
+            ]
+        }
+    },
+    {
         id: 10,
         image: '/img/portfolio10.jpg',
         github: 'https://github.com/Igor-Panasenya/elecar/',
@@ -18,11 +78,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -44,11 +104,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -78,11 +138,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -104,11 +164,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -138,11 +198,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -164,11 +224,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -198,11 +258,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -216,11 +276,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -314,11 +374,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -340,11 +400,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -374,11 +434,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -392,11 +452,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS,'
                 },
                 {
                     title: 'Стилизация',
@@ -418,11 +478,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -436,11 +496,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
@@ -462,11 +522,11 @@ const portfolioArray = [
             eng: [
                 {
                     title: 'Markup',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'UI',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Styles',
@@ -476,11 +536,11 @@ const portfolioArray = [
             ru: [
                 {
                     title: 'Разметка',
-                    body: 'HTML'
+                    body: 'JSX'
                 },
                 {
                     title: 'Пользовательский интерфейс',
-                    body: 'React.JS, JSX'
+                    body: 'React.JS'
                 },
                 {
                     title: 'Стилизация',
